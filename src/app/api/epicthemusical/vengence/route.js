@@ -10,6 +10,7 @@ export async function GET() {
         saga: "The Vengence Saga",
         characters: ["Calypso", "Odysseus"],
         video: "https://www.youtube.com/embed/7M3gzo-hSCo?si=x1y5F2lOa2paoJ80",
+        lyrics: [],
       },
       {
         id: 2,
@@ -17,6 +18,7 @@ export async function GET() {
         saga: "The Vengence Saga",
         characters: ["Odysseus", "Hermes"],
         video: "https://www.youtube.com/embed/zJhJ5E1hK2A?si=KGzBqV0HfP1c_gAB",
+        lyrics: [],
       },
       {
         id: 3,
@@ -24,6 +26,7 @@ export async function GET() {
         saga: "The Vengence Saga",
         characters: ["Odysseus"],
         video: "https://www.youtube.com/embed/4n0U1Erga90?si=dVjYsOjvFtYLkx9F",
+        lyrics: [],
       },
       {
         id: 4,
@@ -31,6 +34,7 @@ export async function GET() {
         saga: "The Vengence Saga",
         characters: ["Odysseus", "Poseidon"],
         video: "https://www.youtube.com/embed/8njnTRKGdYw?si=6TY3Ce23u6_YGSOF",
+        lyrics: [],
       },
       {
         id: 5,
@@ -38,6 +42,7 @@ export async function GET() {
         saga: "The Vengence Saga",
         characters: ["Odysseus", "Poseidon"],
         video: "https://www.youtube.com/embed/zov6NXIAuow?si=GlWHKplpddTS2l0p",
+        lyrics: [],
       },
     ],
   };

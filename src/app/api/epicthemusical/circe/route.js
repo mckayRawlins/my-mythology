@@ -10,6 +10,7 @@ export async function GET() {
         saga: "The Circe Saga",
         characters: ["Odysseus", "Eurylochus", "Circe"],
         video: "https://www.youtube.com/embed/tso8nSWnENM?si=WTrmBWIVBhovnib5",
+        lyrics: [],
       },
       {
         id: 2,
@@ -17,6 +18,7 @@ export async function GET() {
         saga: "The Circe Saga",
         characters: ["Odysseus", "Hermes"],
         video: "https://www.youtube.com/embed/xkIBM71E0_w?si=5C25UXj2DHffe2QL",
+        lyrics: [],
       },
       {
         id: 3,
@@ -24,6 +26,7 @@ export async function GET() {
         saga: "The Circe Saga",
         characters: ["Odysseus", "Circe"],
         video: "https://www.youtube.com/embed/km6NITbLVHc?si=2jQE6lfgQASPlBHY",
+        lyrics: [],
       },
       {
         id: 4,
@@ -31,6 +34,7 @@ export async function GET() {
         saga: "The Circe Saga",
         characters: ["Odysseus", "Circe"],
         video: "https://www.youtube.com/embed/NM_Kg0I29Bs?si=4X-UhYvCJgmKmvqT",
+        lyrics: [],
       },
     ],
   };

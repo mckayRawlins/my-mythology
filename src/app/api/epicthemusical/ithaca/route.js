@@ -10,6 +10,7 @@ export async function GET() {
         saga: "The Ithaca Saga",
         characters: ["Penelope", "Suitors"],
         video: "https://www.youtube.com/embed/Bb6ssHUxrNk?si=u_B7ow2b80rhawR5",
+        lyrics: [],
       },
       {
         id: 2,
@@ -17,6 +18,7 @@ export async function GET() {
         saga: "The Ithaca Saga",
         characters: ["Antonius", "Suitors"],
         video: "https://www.youtube.com/embed/oeDDZNKHOVo?si=2XfqiUlR93uqC4Rx",
+        lyrics: [],
       },
       {
         id: 3,
@@ -24,6 +26,7 @@ export async function GET() {
         saga: "The Ithaca Saga",
         characters: ["Odysseus", "Telemachus", "Suitors"],
         video: "https://www.youtube.com/embed/TBfp__LH554?si=Qzoi0q0nTWLuLT6g",
+        lyrics: [],
       },
       {
         id: 4,
@@ -31,6 +34,7 @@ export async function GET() {
         saga: "The Ithaca Saga",
         characters: ["Odysseus", "Telemachus", "Athena"],
         video: "https://www.youtube.com/embed/FBfT0E6oF6I?si=3u7tNNOqHu9Mrct2",
+        lyrics: [],
       },
       {
         id: 5,
@@ -38,6 +42,7 @@ export async function GET() {
         saga: "The Ithaca Saga",
         characters: ["Odysseus", "Penelope"],
         video: "https://www.youtube.com/embed/rF5tJ8xuaIc?si=G46GQuOaf30N92BW",
+        lyrics: [],
       },
     ],
   };

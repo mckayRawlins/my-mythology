@@ -10,6 +10,7 @@ export async function GET() {
         saga: "The Wisdom Saga",
         characters: ["Telemachus", "Antinous", "Suitors"],
         video: "https://www.youtube.com/embed/nxDH6Dbyhi4?si=CBKTRSFTG1UQrJXs",
+        lyrics: [],
       },
       {
         id: 2,
@@ -17,6 +18,7 @@ export async function GET() {
         saga: "The Wisdom Saga",
         characters: ["Telemachus", "Athena", "Antinous", "Suitors"],
         video: "https://www.youtube.com/embed/BPiJF7rceiA?si=nmnCVGpSqeN50S1C",
+        lyrics: [],
       },
       {
         id: 3,
@@ -24,6 +26,7 @@ export async function GET() {
         saga: "The Wisdom Saga",
         characters: ["Telemachus", "Athena"],
         video: "https://www.youtube.com/embed/DR26QjyF__g?si=VrHWbKeh_2UqAgyv",
+        lyrics: [],
       },
       {
         id: 4,
@@ -31,6 +34,7 @@ export async function GET() {
         saga: "The Wisdom Saga",
         characters: ["Athena", "Odysseus", "Calypso", "Odysseus' Dead Men"],
         video: "https://www.youtube.com/embed/lpVWEq_wIrs?si=bKdorN4JE_NeIdi3",
+        lyrics: [],
       },
       {
         id: 5,
@@ -46,6 +50,7 @@ export async function GET() {
           "Hera",
         ],
         video: "https://www.youtube.com/embed/dA8R3XNdXjQ?si=ENAe-CuVw4tNKDv3",
+        lyrics: [],
       },
     ],
   };

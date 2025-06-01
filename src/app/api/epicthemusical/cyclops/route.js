@@ -10,6 +10,7 @@ export async function GET() {
         saga: "The Cyclops Saga",
         characters: ["Odysseus", "Eurylochus", "Polyphemus", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/nDQyFHmuQls?si=8wHXNoSFfITQpGMK",
+        lyrics: [],
       },
       {
         id: 2,
@@ -17,6 +18,7 @@ export async function GET() {
         saga: "The Cyclops Saga",
         characters: ["Odysseus", "Eurylochus", "Polyphemus", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/rND9-qeA7Lo?si=A-Gjd8osxiR_WxK-",
+        lyrics: [],
       },
       {
         id: 3,
@@ -30,6 +32,7 @@ export async function GET() {
           "Odysseus' Crew",
         ],
         video: "https://www.youtube.com/embed/NGxrhdgAg18?si=MDWP3apovETu2p7B",
+        lyrics: [],
       },
       {
         id: 4,
@@ -37,6 +40,7 @@ export async function GET() {
         saga: "The Cyclops Saga",
         characters: ["Odysseus", "Athena"],
         video: "https://www.youtube.com/embed/xrFaGilus6o?si=5BZpQKaYWT_7BS_V",
+        lyrics: [],
       },
     ],
   };

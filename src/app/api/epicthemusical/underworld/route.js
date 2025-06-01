@@ -16,6 +16,7 @@ export async function GET() {
           "Odysseus' Dead Men",
         ],
         video: "https://www.youtube.com/embed/cyqul8pKHko?si=6Mg8jsNy_gklqdhE",
+        lyrics: [],
       },
       {
         id: 2,
@@ -23,6 +24,7 @@ export async function GET() {
         saga: "The Underworld Saga",
         characters: ["Odysseus", "Tiresias"],
         video: "https://www.youtube.com/embed/BZ8qL5P270Q?si=mlAFUhRvk9aoqIx_",
+        lyrics: [],
       },
       {
         id: 3,
@@ -30,6 +32,7 @@ export async function GET() {
         saga: "The Underworld Saga",
         characters: ["Odysseus", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/qYDms9Z-02A?si=E_XJmeJVm2kReO30",
+        lyrics: [],
       },
     ],
   };

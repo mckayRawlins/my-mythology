@@ -10,6 +10,7 @@ export async function GET() {
         saga: "The Ocean Saga",
         characters: ["Odysseus", "Eurylochus", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/sRntPU_s-gI?si=r7n6BivOn3HH7UUM",
+        lyrics: [],
       },
       {
         id: 2,
@@ -17,6 +18,7 @@ export async function GET() {
         saga: "The Ocean Saga",
         characters: ["Odysseus", "Eurylochus", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/ZxQHl2fVJ-s?si=32MT6wCjH6rSZAFn",
+        lyrics: [],
       },
       {
         id: 3,
@@ -30,6 +32,7 @@ export async function GET() {
           "Odysseus' Crew",
         ],
         video: "https://www.youtube.com/embed/UGYny6uI2bA?si=VT33iax7207vQZaZ",
+        lyrics: [],
       },
       {
         id: 4,
@@ -37,6 +40,7 @@ export async function GET() {
         saga: "The Ocean Saga",
         characters: ["Odysseus", "Poseidon", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/skVSbITX4kY?si=jExLWAF2N8KhN5cE",
+        lyrics: [],
       },
     ],
   };

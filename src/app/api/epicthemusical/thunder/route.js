@@ -10,6 +10,7 @@ export async function GET() {
         saga: "The Thunder Saga",
         characters: ["Odysseus", "Sirens"],
         video: "https://www.youtube.com/embed/3Vo0KbqRB5k?si=-H0oXiyhW4Z_3hlH",
+        lyrics: [],
       },
       {
         id: 2,
@@ -17,6 +18,7 @@ export async function GET() {
         saga: "The Thunder Saga",
         characters: ["Odysseus", "Sirens", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/6sDviM1VPa0?si=mRYm-NBJG06W8rCg",
+        lyrics: [],
       },
       {
         id: 3,
@@ -24,6 +26,7 @@ export async function GET() {
         saga: "The Thunder Saga",
         characters: ["Odysseus", "Eurylochus", "Scylla", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/aPxjbWbhyPc?si=Dog4EP-zmw0NyF6J",
+        lyrics: [],
       },
       {
         id: 4,
@@ -31,6 +34,7 @@ export async function GET() {
         saga: "The Thunder Saga",
         characters: ["Odysseus", "Eurylochus", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/x_xJEfDB7y0?si=rsxcuVNgmz7pUDHm",
+        lyrics: [],
       },
       {
         id: 5,
@@ -38,6 +42,7 @@ export async function GET() {
         saga: "The Thunder Saga",
         characters: ["Odysseus", "Zeus", "Eurylochus", "Odysseus' Crew"],
         video: "https://www.youtube.com/embed/MWjmMKCEwrA?si=4Ht4t3RulG4WPFkk",
+        lyrics: [],
       },
     ],
   };
