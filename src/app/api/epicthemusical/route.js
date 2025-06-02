@@ -37,7 +37,7 @@ export async function GET() {
         songCount: 5,
       },
       {
-        id: "vegence",
+        id: "vengence",
         title: "The Vegence Saga",
         songCount: 5,
       },
