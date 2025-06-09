@@ -12,7 +12,7 @@ export default function MythLinkCard({
       <div className="group flex flex-col items-center justify-center">
         <span className="text-8xl">{icon}</span>
         <span
-          className={`text-5xl font-bold bg-gradient-to-r ${gradient} text-transparent bg-clip-text`}
+          className={`text-5xl font-bold bg-gradient-to-r ${gradient} text-transparent bg-clip-text `}
         >
           {title}
         </span>

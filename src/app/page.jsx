@@ -1,19 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-slate-500 via-blue-300 to-slate-500 p-8">
-        <div className="max-w-6xl mx-auto">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-500 to-slate-900 p-8">
+        <Link href="http://localhost:3000/epic">EPIC: The Musical</Link>
+        <div className="max-w-[60%] mx-auto">
           {/* Loading header skeleton */}
           <div className="h-12 bg-gradient-to-r from-blue-100/20 to-slate-50/20 rounded-lg animate-pulse mb-12"></div>
 
           {/* Loading grid skeleton */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {Array.from({ length: 8 }).map((_, i) => (
+          <div className="flex flex-col">
+            {Array.from({ length: 3 }).map((_, i) => (
               <div
                 key={i}
-                className="h-32 bg-gradient-to-br from-white/10 to-white/5 rounded-xl animate-pulse"
+                className="h-32 bg-gradient-to-br mt-10 from-white/10 to-white/5 rounded-xl animate-pulse"
                 style={{ animationDelay: `${i * 100}ms` }}
               ></div>
             ))}

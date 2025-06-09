@@ -150,6 +150,7 @@ export async function GET() {
           "When does a candle become a blaze? (Forgive me)",
           "When does a man become a monster? (Forgive me)",
           "When does a man become a monster? (Forgive me)",
+          "I'm just a man",
         ],
       },
       {

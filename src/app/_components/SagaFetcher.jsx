@@ -8,6 +8,7 @@ export default function SagaFetcher({ sagaId }) {
   const [error, setError] = useState(null);
   const [songLyrics, setSongLyrics] = useState(new Set());
   const [playingSong, setPlayingSong] = useState(null);
+  const [favorite, setFavorite] = useState(null);
   useEffect(() => {
     const fetchEpicData = async () => {
       try {
@@ -41,7 +42,25 @@ export default function SagaFetcher({ sagaId }) {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-500 to-slate-900 p-8">
+        <div className="max-w-[60%] mx-auto">
+          {/* Loading header skeleton */}
+          <div className="h-12 bg-gradient-to-r from-blue-100/20 to-slate-50/20 rounded-lg animate-pulse mb-12"></div>
+
+          {/* Loading grid skeleton */}
+          <div className="flex flex-col">
+            {Array.from({ length: 3 }).map((_, i) => (
+              <div
+                key={i}
+                className="h-32 bg-gradient-to-br mt-10 from-white/10 to-white/5 rounded-xl animate-pulse"
+                style={{ animationDelay: `${i * 100}ms` }}
+              ></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
@@ -54,9 +73,17 @@ export default function SagaFetcher({ sagaId }) {
 
   return (
     <div
-      className={`text-white p-10 min-h-screen bg-gradient-to-br ${sagaData.themeGradient}`}
+      className={`text-white font-serif p-10 min-h-screen bg-gradient-to-br ${sagaData.themeGradient}`}
     >
-      <h1>{sagaData.sagaTitle}</h1>
+      <img
+        src="https://i.namu.wiki/i/IjcSCSQ9J9ygQrb2tmovlxpqX3-6w479jhYDxwBR41tVtG8pXR7gmqtVPdR6nS9NHcJKzvj1Sg6xixHMrsLOBg.webp"
+        alt="epic logo"
+        className="mx-auto opacity-40"
+      />
+      <h1 className="text-center text-5xl">{sagaData.sagaTitle}</h1>
+      <h3 className="text-center text-white/50">
+        EPIC: The Musical - Jorge Rivera-Herrans
+      </h3>
       {sagaData.songs.map((song) => {
         const isPlaying = playingSong === song.id;
         const showLyrics = songLyrics === song.id;
@@ -82,16 +109,19 @@ export default function SagaFetcher({ sagaId }) {
             </div>
             <div className="flex">
               <button
-                className="w-fit mb-5 rounded-2xl px-5 py-3 mr-2 bg-slate-300/20 border border-white/80"
+                className="w-fit mb-5 rounded-2xl px-5 py-3 mr-2 bg-slate-300/20 border border-white/80 hover:cursor-pointer"
                 onClick={() => togglePlayingSong(song.id)}
               >
                 {isPlaying ? "⏸ Pause" : "▶ Play"}
               </button>
               <button
-                className="w-fit mb-5 rounded-2xl px-5 py-3 bg-slate-300/20 border border-white/80"
+                className="w-fit mb-5 rounded-2xl px-5 py-3 mr-2 bg-slate-300/20 border border-white/80 hover:cursor-pointer"
                 onClick={() => toggleLyrics(song.id)}
               >
                 {showLyrics ? "⬆ Collapse" : "⬇ Expand"}
+              </button>
+              <button className="w-fit mb-5 rounded-2xl px-5 py-3 bg-slate-300/20 border border-white/80 hover:cursor-pointer">
+                <span>&#9829;</span>
               </button>
             </div>
             <div className="grid grid-cols-2 gap-3">
