@@ -4,6 +4,7 @@ import Image from "next/image";
 import EpicFetcher from "../_components/EpicFetcher";
 import DisplaySagas from "../_components/DisplaySagas";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Page() {
   const [linkStyle, setLinkStyle] = useState("list");
@@ -19,9 +20,14 @@ export default function Page() {
     }
   };
   return (
-    <div className="flex flex-col items-center p-10 min-h-screen w-[100%] bg-black text-white font-serif">
+    <div className="flex flex-col items-center p-10 min-h-screen relative w-[100%] bg-black text-white font-serif">
+      <div className="absolute rounded-full w-fit px-3 mx-2 my-5 left-0 top-0 text-white font-serif bg-slate-300/20 border border-white/80 hover:bg-slate-300/50">
+        <Link href="/">Home</Link>
+      </div>
       <div>
-        <img src="https://i.namu.wiki/i/IjcSCSQ9J9ygQrb2tmovlxpqX3-6w479jhYDxwBR41tVtG8pXR7gmqtVPdR6nS9NHcJKzvj1Sg6xixHMrsLOBg.webp" />
+        <div className="w-fit mx-auto">
+          <Image src="/epiclogo.png" width={300} height={200} alt="epic logo" />
+        </div>
         <p className="text-center">The Musical</p>
       </div>
       <div className="flex">

@@ -38,7 +38,10 @@ const mythLinkData = [
 
 export default async function Page() {
   return (
-    <div>
+    <div className="min-h-screen relative text-center bg-gradient-to-br from-blue-200 via-sky-200 to-blue-200 p-8">
+      <div className="absolute rounded-lg w-fit px-3 mx-2 my-5 left-0 top-0 text-black bg-sky-300/20 border border-slate-600/80 hover:bg-sky-300/50">
+        <Link href="/">Home</Link>
+      </div>
       <h1 className="text-center text-5xl font-bold my-10">
         Expore Ancient Greek Myths and Ledgends
       </h1>
@@ -52,7 +55,7 @@ export default async function Page() {
           return (
             <div
               key={link.title}
-              className="my-15 mx-auto py-3 w-[80%] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-slate-100"
+              className="my-15 mx-auto py-3 w-[80%] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-slate-100/30"
             >
               <MythLinkCard
                 title={link.title}

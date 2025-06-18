@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function SagaFetcher({ sagaId }) {
   const [sagaData, setSagaData] = useState(null);
@@ -75,11 +76,9 @@ export default function SagaFetcher({ sagaId }) {
     <div
       className={`text-white font-serif p-10 min-h-screen bg-gradient-to-br ${sagaData.themeGradient}`}
     >
-      <img
-        src="https://i.namu.wiki/i/IjcSCSQ9J9ygQrb2tmovlxpqX3-6w479jhYDxwBR41tVtG8pXR7gmqtVPdR6nS9NHcJKzvj1Sg6xixHMrsLOBg.webp"
-        alt="epic logo"
-        className="mx-auto opacity-40"
-      />
+      <div className="w-fit mx-auto opacity-40">
+        <Image src="/epiclogo.png" width={300} height={200} alt="epic logo" />
+      </div>
       <h1 className="text-center text-5xl">{sagaData.sagaTitle}</h1>
       <h3 className="text-center text-white/50">
         EPIC: The Musical - Jorge Rivera-Herrans
