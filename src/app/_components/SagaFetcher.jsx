@@ -118,7 +118,7 @@ export default function SagaFetcher({ sagaId }) {
                 className="w-fit mb-5 rounded-2xl px-5 py-3 mr-2 bg-slate-300/20 border border-white/80 hover:cursor-pointer"
                 onClick={() => toggleLyrics(song.id)}
               >
-                {showLyrics ? "⬆ Collapse" : "⬇ Expand"}
+                {showLyrics ? "⬆ Lyrics" : "⬇ Lyrics"}
               </button>
               <button className="w-fit mb-5 rounded-2xl px-5 py-3 bg-slate-300/20 border border-white/80 hover:cursor-pointer">
                 <span>&#9829;</span>
