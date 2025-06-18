@@ -62,6 +62,7 @@ export default function DisplaySagas() {
               href={`http://localhost:3000/epic/${saga.id}`}
               gradient={saga.theme}
               description={saga.description}
+              id={saga.id}
             />
           </div>
         );

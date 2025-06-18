@@ -109,6 +109,7 @@ export default function SagaFetcher({ sagaId }) {
             </div>
             <div className="flex">
               <button
+                id={`play-${song.id}`}
                 className="w-fit mb-5 rounded-2xl px-5 py-3 mr-2 bg-slate-300/20 border border-white/80 hover:cursor-pointer"
                 onClick={() => togglePlayingSong(song.id)}
               >

@@ -6,9 +6,10 @@ export default function MythLinkCard({
   icon,
   description,
   gradient,
+  id,
 }) {
   return (
-    <Link href={href}>
+    <Link href={href} id={id}>
       <div className="group flex flex-col items-center justify-center">
         <span className="text-8xl">{icon}</span>
         <span

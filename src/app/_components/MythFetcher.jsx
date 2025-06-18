@@ -54,8 +54,14 @@ export default function MythFetcher({ myth }) {
           <Link
             key={index}
             href={`http://localhost:3000/myths/${myth}/${mythItem.name.toLowerCase()}`}
+            className="group border w-[50%] mx-auto py-10 my-5 rounded-2xl"
           >
-            {mythItem.name}
+            <div className="text-center text-2xl">
+              <p>{mythItem.name}</p>
+              <p className="text-sm text-gray-400 opacity-0 transition-opacity duration-600 group-hover:opacity-100">
+                {mythItem.description}
+              </p>
+            </div>
           </Link>
         );
       })}

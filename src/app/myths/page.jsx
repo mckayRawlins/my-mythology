@@ -8,6 +8,7 @@ const mythLinkData = [
     icon: "⚡",
     description: "Divine rulers of Olympus",
     gradient: "from-red-500 to-yellow-500",
+    id: "gods",
   },
   {
     title: "Titans",
@@ -15,6 +16,7 @@ const mythLinkData = [
     icon: "⛰️",
     description: "Ancient primordial beings",
     gradient: "from-yellow-500 to-green-500",
+    id: "titans",
   },
   {
     title: "Monsters",
@@ -22,6 +24,7 @@ const mythLinkData = [
     icon: "🐍",
     description: "Fearsome legendary beasts",
     gradient: "from-green-500 to-blue-500",
+    id: "monsters",
   },
   {
     title: "Heroes",
@@ -29,6 +32,7 @@ const mythLinkData = [
     icon: "⚔️",
     description: "Champions of legend",
     gradient: "from-blue-500 to-violet-500",
+    id: "heroes",
   },
 ];
 
@@ -56,6 +60,7 @@ export default async function Page() {
                 icon={link.icon}
                 description={link.description}
                 gradient={link.gradient}
+                id={link.id}
               />
             </div>
           );

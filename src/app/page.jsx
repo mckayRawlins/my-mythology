@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-500 to-slate-900 p-8">
         <Link href="http://localhost:3000/epic">EPIC: The Musical</Link>
+        <Link href="http://localhost:3000/myths">Explore Greek Myths</Link>
         <div className="max-w-[60%] mx-auto">
           {/* Loading header skeleton */}
           <div className="h-12 bg-gradient-to-r from-blue-100/20 to-slate-50/20 rounded-lg animate-pulse mb-12"></div>
