@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-8 items-center mt-5">
-          <Link href="http://localhost:3000/myths">
+          <Link href="/myths">
             <div
               className="group flex flex-col items-center text-center p-10 rounded-lg border-2 border-blue-500/30 bg-gradient-to-br from-slate-800/40 to-gray-900/40 backdrop-blur-sm"
               onMouseEnter={() => setHoveredCard("myths")}
@@ -62,7 +62,7 @@ export default function Home() {
               </p>
             </div>
           </Link>
-          <Link href="http://localhost:3000/epic">
+          <Link href="/epic">
             <div
               className="group flex flex-col items-center text-center p-10 rounded-lg border-2 border-blue-500/30 bg-gradient-to-br from-slate-800/40 to-gray-900/40 backdrop-blur-sm"
               onMouseEnter={() => setHoveredCard("epic")}
