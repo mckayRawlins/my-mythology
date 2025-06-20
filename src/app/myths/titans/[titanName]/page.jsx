@@ -1,6 +1,6 @@
 export default async function Page({ params }) {
   const { titanName } = await params;
-  const res = await fetch(`http://calculator-mx2q.onrender.com/api/titans`);
+  const res = await fetch(`https://calculator-mx2q.onrender.com/api/titans`);
 
   try {
     if (!res.ok) {

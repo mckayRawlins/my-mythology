@@ -1,6 +1,6 @@
 export default async function Page({ params }) {
   const { monsterName } = await params;
-  const res = await fetch(`http://calculator-mx2q.onrender.com/api/monsters`);
+  const res = await fetch(`https://calculator-mx2q.onrender.com/api/monsters`);
 
   try {
     if (!res.ok) {

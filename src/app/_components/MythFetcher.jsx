@@ -13,7 +13,7 @@ export default function MythFetcher({ myth }) {
         setLoading(true);
         setError(null);
         const res = await fetch(
-          `http://calculator-mx2q.onrender.com/api/${myth}`
+          `https://calculator-mx2q.onrender.com/api/${myth}`
         );
         if (!res.ok) {
           throw new Error("Failed to fetch data");
@@ -55,7 +55,7 @@ export default function MythFetcher({ myth }) {
         return (
           <Link
             key={index}
-            href={`http://calculator-mx2q.onrender.com/myths/${myth}/${mythItem.name.toLowerCase()}`}
+            href={`https://calculator-mx2q.onrender.com/myths/${myth}/${mythItem.name.toLowerCase()}`}
             className="group border w-[50%] mx-auto py-10 my-5 rounded-2xl"
           >
             <div className="text-center text-2xl">

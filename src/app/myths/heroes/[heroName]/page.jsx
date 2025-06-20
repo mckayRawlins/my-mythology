@@ -1,6 +1,6 @@
 export default async function Page({ params }) {
   const { heroName } = await params;
-  const res = await fetch(`http://calculator-mx2q.onrender.com/api/heroes`);
+  const res = await fetch(`https://calculator-mx2q.onrender.com/api/heroes`);
 
   try {
     if (!res.ok) {
