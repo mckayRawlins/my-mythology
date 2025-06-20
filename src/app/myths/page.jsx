@@ -43,7 +43,7 @@ export default async function Page() {
         <Link href="/">Home</Link>
       </div>
       <h1 className="text-center text-5xl font-bold my-10">
-        Expore Ancient Greek Myths and Ledgends
+        Explore Ancient Greek Myths and Legends
       </h1>
       <div className="flex justify-center space-x-4 mt-10 text-3xl animate-bounce">
         <span className="animate-pulse">🏛️</span>
