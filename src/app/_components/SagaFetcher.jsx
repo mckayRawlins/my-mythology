@@ -16,7 +16,7 @@ export default function SagaFetcher({ sagaId }) {
         setLoading(true);
         setError(null);
         const res = await fetch(
-          `http://localhost:3000/api/epicthemusical/${sagaId}`
+          `http://calculator-mx2q.onrender.com/api/epicthemusical/${sagaId}`
         );
         if (!res.ok) {
           throw new Error("Failed to fetch data");

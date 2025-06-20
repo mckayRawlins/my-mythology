@@ -12,7 +12,9 @@ export default function EpicFetcher() {
       try {
         setLoading(true);
         setError(null);
-        const res = await fetch("http://localhost:3000/api/epicthemusical");
+        const res = await fetch(
+          "http://calculator-mx2q.onrender.com/api/epicthemusical"
+        );
         if (!res.ok) {
           throw new Error("Failed to fetch data");
         }
