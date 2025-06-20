@@ -46,7 +46,7 @@ export default function EpicFetcher() {
 
   return (
     <div className="h-auto w-fit mx-auto relative">
-      <Link href="http://localhost:3000/epic/vengence">
+      <Link href="http://calculator-mx2q.onrender.com/epic/vengence">
         <div
           className="w-74 h-80 mx-auto absolute top-0 left-0 flex justify-center items-center"
           style={{
@@ -62,7 +62,7 @@ export default function EpicFetcher() {
         </div>
       </Link>
 
-      <Link href="http://localhost:3000/epic/troy">
+      <Link href="http://calculator-mx2q.onrender.com/epic/troy">
         <div
           className="w-80 h-50 z-100 bg-blue-500 mx-auto flex justify-center items-center"
           style={{
@@ -79,7 +79,7 @@ export default function EpicFetcher() {
         </div>
       </Link>
 
-      <Link href="http://localhost:3000/epic/cyclops">
+      <Link href="http://calculator-mx2q.onrender.com/epic/cyclops">
         <div
           className="w-74 h-80 bg-orange-500 mx-auto absolute top-0 right-0 flex justify-center items-center"
           style={{
@@ -97,7 +97,7 @@ export default function EpicFetcher() {
       </Link>
 
       <div className="flex justify-center items-center">
-        <Link href="http://localhost:3000/epic/wisdom">
+        <Link href="http://calculator-mx2q.onrender.com/epic/wisdom">
           <div
             className="w-50 h-80 bg-purple-500 mx-auto"
             style={{
@@ -113,7 +113,7 @@ export default function EpicFetcher() {
           </div>
         </Link>
 
-        <Link href="http://localhost:3000/epic/ithaca">
+        <Link href="http://calculator-mx2q.onrender.com/epic/ithaca">
           <div
             className="w-80 h-80 flex justify-center items-center"
             style={{
@@ -130,7 +130,7 @@ export default function EpicFetcher() {
           </div>
         </Link>
 
-        <Link href="http://localhost:3000/epic/ocean">
+        <Link href="http://calculator-mx2q.onrender.com/epic/ocean">
           <div
             className="w-50 h-80 bg-green-500 mx-auto"
             style={{
@@ -148,7 +148,7 @@ export default function EpicFetcher() {
         </Link>
       </div>
 
-      <Link href="http://localhost:3000/epic/thunder">
+      <Link href="http://calculator-mx2q.onrender.com/epic/thunder">
         <div
           className="w-74 h-80 bg-yellow-500 mx-auto absolute bottom-0 left-0"
           style={{
@@ -165,7 +165,7 @@ export default function EpicFetcher() {
         </div>
       </Link>
 
-      <Link href="http://localhost:3000/epic/underworld">
+      <Link href="http://calculator-mx2q.onrender.com/epic/underworld">
         <div
           className="w-80 h-50 bg-blue-500 mx-auto"
           style={{
@@ -181,7 +181,7 @@ export default function EpicFetcher() {
         </div>
       </Link>
 
-      <Link href="http://localhost:3000/epic/circe">
+      <Link href="http://calculator-mx2q.onrender.com/epic/circe">
         <div
           className="w-74 h-80 bg-orange-500 mx-auto absolute bottom-0 right-0"
           style={{

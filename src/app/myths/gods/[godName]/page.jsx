@@ -2,7 +2,7 @@ import DisplayMythInfo from "@/app/_components/DisplayMythInfo";
 
 export default async function Page({ params }) {
   const { godName } = await params;
-  const res = await fetch(`http://localhost:3000/api/gods`);
+  const res = await fetch(`http://calculator-mx2q.onrender.com/api/gods`);
 
   try {
     if (!res.ok) {
