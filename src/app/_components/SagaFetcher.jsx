@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import useLocalStorage from "../_hooks/useLocalStorage";
 
 export default function SagaFetcher({ sagaId }) {
   const [sagaData, setSagaData] = useState(null);
@@ -9,7 +10,8 @@ export default function SagaFetcher({ sagaId }) {
   const [error, setError] = useState(null);
   const [songLyrics, setSongLyrics] = useState(new Set());
   const [playingSong, setPlayingSong] = useState(null);
-  const [favorite, setFavorite] = useState(null);
+  const [favorite, setFavorite] = useLocalStorage("favoriteSongs", []);
+
   useEffect(() => {
     const fetchEpicData = async () => {
       try {
@@ -40,6 +42,22 @@ export default function SagaFetcher({ sagaId }) {
 
   const toggleLyrics = (songId) => {
     setSongLyrics(songLyrics === songId ? null : songId);
+  };
+
+  const toggleFavorite = (favSong) => {
+    const alreadyFavorite = favorite.some(
+      (song) => song.title === favSong.title
+    );
+
+    const updatedFavorites = alreadyFavorite
+      ? favorite.filter((song) => song.title !== favSong.title)
+      : [
+          ...favorite,
+          { id: Date.now(), title: favSong.title, saga: favSong.saga },
+        ];
+
+    setFavorite(updatedFavorites);
+    console.log(updatedFavorites);
   };
 
   if (loading) {
@@ -120,7 +138,10 @@ export default function SagaFetcher({ sagaId }) {
               >
                 {showLyrics ? "⬆ Lyrics" : "⬇ Lyrics"}
               </button>
-              <button className="w-fit mb-5 rounded-2xl px-5 py-3 bg-slate-300/20 border border-white/80 hover:cursor-pointer">
+              <button
+                className="w-fit mb-5 rounded-2xl px-5 py-3 bg-slate-300/20 border border-white/80 hover:cursor-pointer"
+                onClick={() => toggleFavorite(song)}
+              >
                 <span>&#9829;</span>
               </button>
             </div>

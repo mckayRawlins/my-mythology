@@ -30,7 +30,7 @@ export default function Page() {
         </div>
         <p className="text-center">The Musical</p>
       </div>
-      <div className="flex">
+      <div className="grid grid-cols-2">
         <button
           className="m-5 p-3 rounded-2xl bg-gray-600 hover:bg-gray-500 hover:cursor-pointer"
           onClick={() => handleLinkStyle("radial")}

@@ -56,12 +56,12 @@ export default function DisplaySagas() {
         return (
           <div
             key={saga.id}
-            className={`mx-auto mt-15 p-10 rounded-2xl w-[80%] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-gray-900/50`}
+            className={`mx-auto mt-10 p-10 rounded-2xl w-[80%] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-gray-900/50`}
           >
             <MythLinkCard
               icon={saga.icon}
               title={saga.title}
-              href={`https://calculator-mx2q.onrender.com/epic/${saga.id}`}
+              href={`/epic/${saga.id}`}
               gradient={saga.theme}
               description={saga.description}
               id={saga.id}
